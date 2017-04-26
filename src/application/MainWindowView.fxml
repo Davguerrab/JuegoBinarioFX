@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -9,6 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <HBox fx:id="mainpane" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="753.0" prefWidth="1311.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainWindowController">
@@ -117,36 +119,57 @@
                   <ImageView fx:id="circle64" fitHeight="194.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../../Pictures/Juego%20Binario/64_default.png" />
-                     </image></ImageView>
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="22.0" />
+                     </GridPane.margin></ImageView>
                   <ImageView fx:id="circle32" fitHeight="194.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
                      <image>
                         <Image url="@../../../../Documents/Museo/Binary%20Game%20IMGs/5_default.png" />
                      </image>
+                     <GridPane.margin>
+                        <Insets left="17.0" />
+                     </GridPane.margin>
                   </ImageView>
                   <ImageView fx:id="circle16" fitHeight="194.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
                      <image>
                         <Image url="@../../../../Documents/Museo/Binary%20Game%20IMGs/4_default.png" />
                      </image>
+                     <GridPane.margin>
+                        <Insets left="22.0" />
+                     </GridPane.margin>
                   </ImageView>
                   <ImageView fx:id="circle8" fitHeight="194.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6">
                      <image>
                         <Image url="@../../../../Documents/Museo/Binary%20Game%20IMGs/1_default.png" />
                      </image>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
                   </ImageView>
                   <ImageView fx:id="circle4" fitHeight="194.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8">
                      <image>
                         <Image url="@../../../../Documents/Museo/Binary%20Game%20IMGs/6_default.png" />
                      </image>
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
                   </ImageView>
                   <ImageView fx:id="circle2" fitHeight="194.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10">
                      <image>
                         <Image url="@../../../../Documents/Museo/Binary%20Game%20IMGs/3_default.png" />
                      </image>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
                   </ImageView>
                   <ImageView fx:id="circle1" fitHeight="194.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12">
                      <image>
                         <Image url="@../../../../Documents/Museo/Binary%20Game%20IMGs/2_default.png" />
                      </image>
+                     <GridPane.margin>
+                        <Insets left="23.0" />
+                     </GridPane.margin>
                   </ImageView>
                </children>
             </GridPane>
@@ -189,7 +212,7 @@
                   </Label>
                </children>
             </HBox>
-            <Label fx:id="result" alignment="CENTER" contentDisplay="CENTER" prefHeight="150.0" prefWidth="1110.0" text="Selecciona un número" textAlignment="CENTER" textFill="WHITE">
+            <Label fx:id="result" alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="1110.0" text="Selecciona un número" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Intel Clear Bold" size="46.0" />
                </font>
@@ -701,6 +724,17 @@
                         <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Search" prefWidth="5.0" text="75" GridPane.columnIndex="2" GridPane.rowIndex="7" />
                      </children>
                   </GridPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="11.0">
+               <children>
+                  <Rectangle fx:id="rec64" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="10.0" stroke="TRANSPARENT" strokeType="INSIDE" width="148.0" />
+                  <Rectangle fx:id="rec32" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="10.0" stroke="TRANSPARENT" strokeType="INSIDE" width="148.0" />
+                  <Rectangle fx:id="rec16" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="10.0" stroke="TRANSPARENT" strokeType="INSIDE" width="148.0" />
+                  <Rectangle fx:id="rec8" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="10.0" stroke="TRANSPARENT" strokeType="INSIDE" width="148.0" />
+                  <Rectangle fx:id="rec4" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="10.0" stroke="TRANSPARENT" strokeType="INSIDE" width="148.0" />
+                  <Rectangle fx:id="rec2" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="10.0" stroke="TRANSPARENT" strokeType="INSIDE" width="148.0" />
+                  <Rectangle fx:id="rec1" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="10.0" stroke="TRANSPARENT" strokeType="INSIDE" width="148.0" />
                </children>
             </HBox>
          </children>

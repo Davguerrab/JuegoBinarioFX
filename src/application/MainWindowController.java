@@ -12,6 +12,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.paint.CycleMethod;
 import javafx.scene.paint.LinearGradient;
 import javafx.scene.paint.Stop;
+import javafx.scene.shape.Rectangle;
 
 
 public class MainWindowController {
@@ -70,12 +71,23 @@ public class MainWindowController {
 	@FXML private Label labelp4 = new Label();
 	@FXML private Label labelp2 = new Label();
 	
+	@FXML private Rectangle rec64 = new Rectangle();
+	@FXML private Rectangle rec32 = new Rectangle();
+	@FXML private Rectangle rec16 = new Rectangle();
+	@FXML private Rectangle rec8 = new Rectangle();
+	@FXML private Rectangle rec4 = new Rectangle();
+	@FXML private Rectangle rec2 = new Rectangle();
+	@FXML private Rectangle rec1 = new Rectangle();
+	
+	
 	/////////////////////////////////////
 
 	 Stop[] stops = new Stop[] { new Stop(0, Color.FIREBRICK), new Stop(1, Color.RED)};
      LinearGradient lg1 = new LinearGradient(0, 0, 1, 0, true, CycleMethod.NO_CYCLE, stops);
      
      Color c = Color.web("0x007fbd",1.0);
+     Color transparent = Color.web("0xFEFEFE",0.0);
+     Color greenCSS = Color.web("0xc4d600",1.0);
      
 	 Stop[] stops1 = new Stop[] { new Stop(0, Color.GREEN), new Stop(1, Color.LIMEGREEN)};
      LinearGradient lg2 = new LinearGradient(0, 0, 1, 0, true, CycleMethod.NO_CYCLE, stops1);
@@ -103,6 +115,13 @@ public class MainWindowController {
 		labelp8.setText("");
 		labelp4.setText("");
 		labelp2.setText("");
+		rec64.setFill(transparent);
+		rec32.setFill(transparent);
+		rec16.setFill(transparent);
+		rec8.setFill(transparent);
+		rec4.setFill(transparent);
+		rec2.setFill(transparent);
+		rec1.setFill(transparent);
 		result.setText("Selecciona un número");
 	}
 
@@ -120,12 +139,14 @@ public class MainWindowController {
 		if(ArrayUtils.contains(Potencia64,number)){
 			label64.setText("64");
 			circle64.setImage(Ppl64On);
+			rec64.setFill(greenCSS);
 			SumOfStr += ("2^6");
 			flag = false;
 		} else { label64.setText("0"); }
 		if(ArrayUtils.contains(Potencia32,number)){
 			label32.setText("32");
 			circle32.setImage(Ppl32On);
+			rec32.setFill(greenCSS);
 			if(flag){
 				SumOfStr += ("2^5");
 				flag = false;
@@ -137,6 +158,7 @@ public class MainWindowController {
 		if(ArrayUtils.contains(Potencia16,number)){
 			label16.setText("16");
 			circle16.setImage(Ppl16On);
+			rec16.setFill(greenCSS);
 			if(flag){
 				SumOfStr += ("2^4");
 				flag = false;
@@ -148,6 +170,7 @@ public class MainWindowController {
 		if(ArrayUtils.contains(Potencia8,number)){
 			label8.setText("8");
 			circle8.setImage(Ppl8On);
+			rec8.setFill(greenCSS);
 			if(flag){
 				SumOfStr += ("2^3");
 				flag = false;
@@ -159,6 +182,7 @@ public class MainWindowController {
 		if(ArrayUtils.contains(Potencia4,number)){
 			label4.setText("4");
 			circle4.setImage(Ppl4On);
+			rec4.setFill(greenCSS);
 			if(flag){
 				SumOfStr += ("2^2");
 				flag = false;
@@ -170,6 +194,7 @@ public class MainWindowController {
 		if(ArrayUtils.contains(Potencia2,number)){
 			label2.setText("2");
 			circle2.setImage(Ppl2On);
+			rec2.setFill(greenCSS);
 			if(flag){
 				SumOfStr += ("2^1");
 				flag = false;
@@ -181,6 +206,7 @@ public class MainWindowController {
 		if(ArrayUtils.contains(Potencia1,number)){
 			label1.setText("1");
 			circle1.setImage(Ppl1On);
+			rec1.setFill(greenCSS);
 			if(flag){
 				SumOfStr += ("2^0");
 				flag = false;
