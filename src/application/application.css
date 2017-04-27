@@ -1,5 +1,5 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
-
+/*
 .button {
     -fx-background-color: 
         linear-gradient(#ffd65b, #e68400),
@@ -8,17 +8,29 @@
         linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
         linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
     -fx-background-insets: 0,1,2,3,0;
-    -fx-text-fill: #654b00;
+    -fx-text-fill: black;
     -fx-font-weight: bold;
     -fx-font-size: 11px;
 }
+*/
 
-.button:pressed{
-	-fx-background-color: black;
-    -fx-text-fill: white;	
-    
+.button {
+	-fx-background-color: 
+        #135a83,
+        linear-gradient(#5d8eba 0%, #5d8eba 49%, #5d8eba 50%, #5d8eba 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+	
 }
 
+.button:pressed{
+	-fx-background-color: #c4d600;
+    -fx-text-fill: black;	
+    
+}
 
 #Reset{
 	/*-fx-background-color: #FEFEFE ;*/
@@ -28,10 +40,10 @@
         linear-gradient(b3b0b0 0%, #909090 50%, #767676 100%),
         linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));*/
     -fx-background-radius: 130;
-    -fx-text-fill: white;
-    /*-fx-opacity: 0.8;*/
+    -fx-text-fill: #002080;
+    -fx-opacity: 0.95;
 	-fx-font-size: 16pt;
-    -fx-background-color: transparent;	
+    -fx-background-color: yellow;	
 }
 
 #mainpane{
